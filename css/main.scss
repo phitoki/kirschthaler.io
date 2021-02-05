@@ -1,0 +1,564 @@
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+// global variables
+$base-primary: #0D14D6;
+$base-secondary: #00e0ca;
+$base-tertiary: #91ddd5;
+$mywhite: #f7f7f7;
+$shade1000: #040212;
+$shade800: #211f2c;
+$shade600: #3d3c46;
+$shade400: #7c7c7c;
+$shade200: #aaaaaa;
+$shade100: #d8d7d7;
+$linear-gradient: linear-gradient(45deg, #122a6d, #0D14D6);
+$shadow-tiles: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+
+// Homepage
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {width: 100%;}
+
+.nav-container {
+    background:$shade1000;
+    z-index: 2;
+
+    a {
+        color: $shade100;
+    }
+
+    a:hover {
+        color: $mywhite;
+    }
+
+    .btn {
+        border-radius: 0.5rem;
+        border: 2px solid $shade100;
+        margin-left: 0.6rem;
+        margin-top: -0.6rem;
+        padding: 0.6rem;
+    }
+
+    .btn:hover {
+        background-color: $base-primary;
+        border-radius: 0.5rem;
+        border: 2px solid $base-primary;
+    }
+
+    .logo{
+        max-width:25%;
+        height:auto;
+        color: $mywhite;
+        font-weight: bold;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.2rem;        
+    }
+    .logo:hover {
+        color: $mywhite;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+    ul {
+        display: flex;
+
+        a {
+            display: block;
+            padding: 0 1rem;
+        }
+    }
+}
+
+.social-header {
+    display: none;
+}
+
+.hero {
+    background: $mywhite;
+    color: $linear-gradient;
+    display: grid;
+    text-align: center;
+    padding: 4rem;
+}
+
+.meet {
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    color: $shade600;
+
+    span {
+        margin-top: 0.5rem;
+        margin-right: .5rem;
+        font-size: 25px;
+    }
+}
+
+.scroll {
+    width: 30px;
+    margin-top: 2rem;
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: $mywhite;
+}
+
+.featured {
+    position: relative;
+}
+
+.featured img {
+    border-radius: 1rem;
+    box-shadow: $shadow-tiles;
+}
+
+.featured::before {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: red;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $base-secondary;
+    letter-spacing: .2rem;
+    font-size: .85rem;
+}
+
+.featured-title {
+    color: $shade1000;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: -.4rem;
+    display: block;
+}
+
+.featured-desc {
+    color: $shade600;
+    font-size: .9rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+
+.featured-link {
+    color: $base-primary;
+    padding-bottom: 2rem;
+    display: block;
+}
+
+.skills {
+    background: $base-tertiary;
+}
+
+.skills-container ul li{
+
+    background: $mywhite;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: $shadow-tiles;
+    
+    .icon-container {
+        height: 100px;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+
+        &.one {
+            width: 70px;
+        }
+        &.two{ 
+            width: 80px;
+        }
+        &.three {
+            width: 70px;
+        }
+    }   
+    .skill-title {
+        font-weight: bold;
+    }
+    .featured-desc {
+        margin-bottom: 2rem;
+    }
+}
+
+.portfolio {
+    background: $mywhite;
+}
+
+.portfolio-container a img{
+    margin-bottom: 2rem;
+    max-width:40%;
+    height:auto;
+}
+
+footer {
+    height: 10vh;
+    background-color: $shade1000;
+    justify-content: center;
+    padding: 2rem;
+    .social-footer {
+        display: flex;
+        justify-content: center;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 10rem;
+            a {
+                color: $shade100;
+            }
+            a:hover {
+                color: $mywhite;
+            }
+        }
+    }
+    p {
+        text-align: center;
+        color: $shade100;
+    }
+}
+
+// Project Page Template
+.subheader {
+    height: 80vh;
+    background: $base-tertiary;
+    //display: grid;
+    //grid-template-columns: 40% auto;
+
+    img {
+        display: block;
+        height: 90%;
+        width: auto;
+        margin: auto;
+        //margin-top: 5rem;
+        padding-top: 2rem;
+    }
+}
+
+.overview-wrapper {
+    background:  $mywhite;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: $shadow-tiles;
+    display: block;
+    margin: auto;
+    width: 50%;
+    .header {
+        text-transform: uppercase;
+        font-size: x-small;
+        font-weight: bold;
+    }
+    li {
+        margin: 0 0 0.5rem 0;
+    }
+}
+
+.content-wrapper {
+    margin: 20rem 5rem 5rem 5rem;
+    //margin: 6rem 20rem;
+    h1 {
+        color: $base-secondary;
+        font-size: x-large;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.paragraph-wrapper {
+    margin: 5rem 0;;
+}
+
+
+// About Me 
+
+.avatar {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 2rem 0;
+}
+
+.info-wrapper {
+    padding: 4rem;
+    font-size: 1rem;
+}
+
+// Responsive Design for Breakpints 800px, 1050px, 1250px and 1550px
+
+@media only screen and (min-width: 800px) {
+    .featured, .portfolio {
+        text-align: left;
+    }
+
+    .featured, .portfolio-container {
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
+
+    .left, .portfolio-left {
+        display: grid;
+        place-content: center;
+    }
+
+    .right {
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .skills {
+        margin-top: -5rem;
+        margin-bottom: -7rem;
+        padding-top: 7rem;
+    }
+
+    .skills-container ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1rem;
+    }
+
+    .portfolio{
+        padding-top: 7rem;
+    }
+
+    .portfolio-container img {
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+
+    //Home page
+
+    .hero{
+        height: 90vh;
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+    
+        header {
+            background: $shade1000;
+        }
+    }
+    header {
+        padding: 2rem 2rem 2rem 4rem;
+    }
+    .social-header {
+        padding: 2rem 4rem 2rem 0;
+        background: $shade1000;
+    }       
+    section {
+        padding: 4rem;
+    }
+
+    .social-header{
+        display: block;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            width: 7rem;
+            float: right;
+
+            img {
+                width: 25px;
+            }
+        }
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 66% auto;
+        background: unset;
+        padding: 0;
+        background: $mywhite;
+
+        .content {
+            background: $mywhite;
+            padding: 6rem 8rem 6rem 4rem;
+            text-align: left;
+
+            h1 {
+                font-size: 3.2rem;
+                line-height: 4rem;
+            }
+        }
+    }
+    .meet {
+        margin: unset;
+    }
+    .hero-design {
+        display: unset;
+        margin-left: -50%;
+        margin-top: 15%;
+        width: 100%;
+    }
+
+    .portfolio img {
+        float: right;
+        max-width: 500px;
+    }
+
+    // Project Page Template
+    .subheader {
+        height: 100vh;
+        background: $base-tertiary;
+        display: grid;
+        grid-template-columns: 50% auto;
+
+        img {
+            display: block;
+            height: 50%;
+            width: auto;
+            margin: 3rem;
+        }
+    }
+
+    .overview-wrapper {
+        background:  $mywhite;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: $shadow-tiles;
+        display: block;
+        margin: 5rem;
+        height: 160px;
+        width: 60%;
+        .header {
+            text-transform: uppercase;
+            font-size: x-small;
+            font-weight: bold;
+        }
+        li {
+            margin: 0 0 0.5rem 0;
+        }
+    }
+
+    .content-wrapper {
+        margin: 5rem 15rem;
+        h1 {
+            font-size: x-large;
+            text-align: center;
+        }
+    }
+
+    .paragraph-wrapper {
+        margin: 5rem 0;;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
+
+    // Home Page
+    header {
+        padding: 2rem 2rem 2rem 10rem;
+    }
+    .social-header {
+        padding: 2rem 10rem 2rem 0;;
+    }
+    section {
+        padding: 10rem 10rem 4rem 10rem;
+    }
+
+    .hero .content {
+        padding: 6rem 8rem 6rem 10rem;
+    }
+
+    // Project Page Template
+    .subheader {
+        height: 100vh;
+        background: $base-tertiary;
+        display: grid;
+        grid-template-columns: 50% auto;
+
+        img {
+            display: block;
+            height: 50%;
+            width: auto;
+            margin: 5rem 15rem;
+        }
+    }
+
+    .overview-wrapper {
+        background:  $mywhite;
+        padding: 2rem;
+        border-radius: 1rem;
+        box-shadow: $shadow-tiles;
+        display: block;
+        align-content: left;
+        margin-top: 10rem;
+        height: 160px;
+        width: 60%;
+        .header {
+            text-transform: uppercase;
+            font-size: x-small;
+            font-weight: bold;
+        }
+        li {
+            margin: 0 0 0.5rem 0;
+        }
+    }
+
+    .content-wrapper {
+        margin: 5rem 15rem;
+        h1 {
+            font-size: x-large;
+            text-align: center;
+        }
+    }
+
+    .paragraph-wrapper {
+        margin: 5rem 0;;
+    }
+}
+
+
+@media only screen and (min-width: 1550px) {
+    header {
+        padding: 2rem 2rem 2rem 20rem;
+    }
+    .social-header {
+        padding: 2rem 20rem 2rem 0;;
+    }
+    section {
+        padding: 20rem 20rem 4rem 20rem;
+    }
+
+    .hero .content {
+        padding: 9rem 20rem 6rem 20rem;
+    }
+}
+
+
