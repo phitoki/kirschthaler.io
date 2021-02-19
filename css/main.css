@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&family=Merriweather:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 body {
   height: 100vh;
   margin: 0;
-  font-family: "Poppins";
+  font-family: "Merriweather Sans";
 }
 
 ul {
@@ -92,6 +92,7 @@ header ul a {
   display: grid;
   text-align: center;
   padding: 4rem;
+  font-family: "Merriweather";
 }
 
 .meet {
@@ -102,6 +103,7 @@ header ul a {
   text-align: center;
   font-weight: bold;
   color: #3d3c46;
+  font-family: "Merriweather Sans";
 }
 
 .meet span {
@@ -152,8 +154,9 @@ section {
 
 .featured-title {
   color: #040212;
+  font-family: "Merriweather";
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-top: -.4rem;
   display: block;
 }
@@ -168,6 +171,8 @@ section {
 .featured-link {
   color: #0D14D6;
   padding-bottom: 2rem;
+  font-size: .9rem;
+  line-height: 1.8rem;
   display: block;
 }
 
@@ -208,8 +213,10 @@ section {
   font-weight: bold;
 }
 
-.skills-container ul li .featured-desc {
+.skills-container ul li .featured-desc-skill-desc {
   margin-bottom: 2rem;
+  font-size: .9rem;
+  line-height: 1.8rem;
 }
 
 .portfolio {
@@ -339,9 +346,10 @@ footer p {
     display: -ms-grid;
     display: grid;
     place-content: center;
+    margin-right: 2rem;
   }
   .right {
-    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 1rem;
   }
   .skills {
@@ -366,7 +374,7 @@ footer p {
 
 @media only screen and (min-width: 1050px) {
   .hero {
-    height: 90vh;
+    height: 80vh;
   }
   .nav-container {
     display: -ms-grid;
@@ -415,7 +423,7 @@ footer p {
   }
   .hero .content {
     background: #f7f7f7;
-    padding: 6rem 8rem 6rem 4rem;
+    padding: 6rem 8rem 0rem 4rem;
     text-align: left;
   }
   .hero .content h1 {
@@ -491,7 +499,7 @@ footer p {
     padding: 10rem 10rem 4rem 10rem;
   }
   .hero .content {
-    padding: 6rem 8rem 6rem 10rem;
+    padding: 6rem 8rem 0rem 10rem;
   }
   .subheader {
     height: 100vh;
@@ -551,7 +559,7 @@ footer p {
     padding: 20rem 20rem 4rem 20rem;
   }
   .hero .content {
-    padding: 9rem 20rem 6rem 20rem;
+    padding: 4rem 10rem 0rem 20rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

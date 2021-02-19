@@ -1,5 +1,5 @@
 // import fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&family=Merriweather:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 // global variables
@@ -20,7 +20,7 @@ $shadow-tiles: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
 body {
     height: 100vh;
     margin: 0;
-    font-family: "Poppins";
+    font-family: "Merriweather Sans";
 }
 
 ul {
@@ -99,6 +99,7 @@ header {
     display: grid;
     text-align: center;
     padding: 4rem;
+    font-family: "Merriweather";
 }
 
 .meet {
@@ -107,6 +108,7 @@ header {
     text-align: center;
     font-weight: bold;
     color: $shade600;
+    font-family: "Merriweather Sans";
 
     span {
         margin-top: 0.5rem;
@@ -156,8 +158,9 @@ section {
 
 .featured-title {
     color: $shade1000;
+    font-family: "Merriweather";
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: -.4rem;
     display: block;
 }
@@ -172,6 +175,8 @@ section {
 .featured-link {
     color: $base-primary;
     padding-bottom: 2rem;
+    font-size: .9rem;
+    line-height: 1.8rem;
     display: block;
 }
 
@@ -206,8 +211,10 @@ section {
     .skill-title {
         font-weight: bold;
     }
-    .featured-desc {
+    .featured-desc-skill-desc {
         margin-bottom: 2rem;
+        font-size: .9rem;
+        line-height: 1.8rem;
     }
 }
 
@@ -328,10 +335,11 @@ footer {
     .left, .portfolio-left {
         display: grid;
         place-content: center;
+        margin-right: 2rem;
     }
 
     .right {
-        margin-left: 2rem;
+        margin-right: 2rem;
         margin-top: 1rem;
     }
 
@@ -361,7 +369,7 @@ footer {
     //Home page
 
     .hero{
-        height: 90vh;
+        height: 80vh;
     }
 
     .nav-container {
@@ -408,7 +416,7 @@ footer {
 
         .content {
             background: $mywhite;
-            padding: 6rem 8rem 6rem 4rem;
+            padding: 6rem 8rem 0rem 4rem;
             text-align: left;
 
             h1 {
@@ -493,7 +501,7 @@ footer {
     }
 
     .hero .content {
-        padding: 6rem 8rem 6rem 10rem;
+        padding: 6rem 8rem 0rem 10rem;
     }
 
     // Project Page Template
@@ -550,14 +558,14 @@ footer {
         padding: 2rem 2rem 2rem 20rem;
     }
     .social-header {
-        padding: 2rem 20rem 2rem 0;;
+        padding: 2rem 20rem 2rem 0;
     }
     section {
         padding: 20rem 20rem 4rem 20rem;
     }
 
     .hero .content {
-        padding: 9rem 20rem 6rem 20rem;
+        padding: 4rem 10rem 0rem 20rem;
     }
 }
 
