@@ -4,8 +4,8 @@
 
 // global variables
 $base-primary: #0D14D6;
-$base-secondary: #00e0ca;
-$base-tertiary: #91ddd5;
+$base-secondary: #fe092a;
+$base-tertiary: #ffa26c;
 $mywhite: #f7f7f7;
 $shade1000: #040212;
 $shade800: #211f2c;
@@ -13,8 +13,9 @@ $shade600: #3d3c46;
 $shade400: #7c7c7c;
 $shade200: #aaaaaa;
 $shade100: #d8d7d7;
-$linear-gradient: linear-gradient(45deg, #122a6d, #0D14D6);
 $shadow-tiles: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+
+
 
 // Homepage
 body {
@@ -95,11 +96,15 @@ header {
 
 .hero {
     background: $mywhite;
-    color: $linear-gradient;
     display: grid;
-    text-align: center;
     padding: 4rem;
-    font-family: "Merriweather";
+    h1 {
+        text-align: center;
+        font-family: "Merriweather";
+        background: -webkit-linear-gradient($base-secondary, $base-tertiary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 
 .meet {
@@ -211,7 +216,7 @@ section {
     .skill-title {
         font-weight: bold;
     }
-    .featured-desc-skill-desc {
+    .featured-desc {
         margin-bottom: 2rem;
         font-size: .9rem;
         line-height: 1.8rem;
@@ -317,12 +322,28 @@ footer {
 
 .info-wrapper {
     padding: 4rem;
-    font-size: 1rem;
+    h1 {                
+        font-family: "Merriweather";
+        color: $shade1000;
+    }
+    p {
+        font-size: 1rem;
+        color: $shade600;
+        font-size: .9rem;
+        line-height: 1.8rem;
+        //margin-right: 30%;
+    }
 }
 
 // Responsive Design for Breakpints 800px, 1050px, 1250px and 1550px
 
 @media only screen and (min-width: 800px) {
+    .hero {
+        h1 {
+            text-align: left;
+        }
+    }
+
     .featured, .portfolio {
         text-align: left;
     }

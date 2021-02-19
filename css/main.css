@@ -87,12 +87,17 @@ header ul a {
 
 .hero {
   background: #f7f7f7;
-  color: linear-gradient(45deg, #122a6d, #0D14D6);
   display: -ms-grid;
   display: grid;
-  text-align: center;
   padding: 4rem;
+}
+
+.hero h1 {
+  text-align: center;
   font-family: "Merriweather";
+  background: -webkit-linear-gradient(#fe092a, #ffa26c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .meet {
@@ -147,7 +152,7 @@ section {
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #00e0ca;
+  color: #fe092a;
   letter-spacing: .2rem;
   font-size: .85rem;
 }
@@ -177,7 +182,7 @@ section {
 }
 
 .skills {
-  background: #91ddd5;
+  background: #ffa26c;
 }
 
 .skills-container ul li {
@@ -213,7 +218,7 @@ section {
   font-weight: bold;
 }
 
-.skills-container ul li .featured-desc-skill-desc {
+.skills-container ul li .featured-desc {
   margin-bottom: 2rem;
   font-size: .9rem;
   line-height: 1.8rem;
@@ -272,7 +277,7 @@ footer p {
 
 .subheader {
   height: 80vh;
-  background: #91ddd5;
+  background: #ffa26c;
 }
 
 .subheader img {
@@ -309,7 +314,7 @@ footer p {
 }
 
 .content-wrapper h1 {
-  color: #00e0ca;
+  color: #fe092a;
   font-size: x-large;
   text-align: center;
   text-transform: uppercase;
@@ -329,10 +334,24 @@ footer p {
 
 .info-wrapper {
   padding: 4rem;
+}
+
+.info-wrapper h1 {
+  font-family: "Merriweather";
+  color: #040212;
+}
+
+.info-wrapper p {
   font-size: 1rem;
+  color: #3d3c46;
+  font-size: .9rem;
+  line-height: 1.8rem;
 }
 
 @media only screen and (min-width: 800px) {
+  .hero h1 {
+    text-align: left;
+  }
   .featured, .portfolio {
     text-align: left;
   }
@@ -445,7 +464,7 @@ footer p {
   }
   .subheader {
     height: 100vh;
-    background: #91ddd5;
+    background: #ffa26c;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% auto;
@@ -503,7 +522,7 @@ footer p {
   }
   .subheader {
     height: 100vh;
-    background: #91ddd5;
+    background: #ffa26c;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 50% auto;
