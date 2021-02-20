@@ -6,7 +6,7 @@
 $base-primary: #0D14D6;
 $base-secondary: #fe092a;
 $base-tertiary: #ffa26c;
-$mywhite: #f7f7f7;
+$mywhite: #ffffff;
 $shade1000: #040212;
 $shade800: #211f2c;
 $shade600: #3d3c46;
@@ -570,6 +570,13 @@ footer {
 
     .paragraph-wrapper {
         margin: 5rem 0;;
+    }
+    // About Me
+    .container-about {
+        padding: 5rem 10rem;
+    }
+    .subinfo-wrapper {
+        padding: 5rem;
     }
 }
 

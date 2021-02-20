@@ -30,7 +30,7 @@ img {
 }
 
 .nav-container a:hover {
-  color: #f7f7f7;
+  color: #ffffff;
 }
 
 .nav-container .btn {
@@ -50,14 +50,14 @@ img {
 .nav-container .logo {
   max-width: 25%;
   height: auto;
-  color: #f7f7f7;
+  color: #ffffff;
   font-weight: bold;
   font-family: 'Bebas Neue', cursive;
   font-size: 1.2rem;
 }
 
 .nav-container .logo:hover {
-  color: #f7f7f7;
+  color: #ffffff;
 }
 
 header {
@@ -86,7 +86,7 @@ header ul a {
 }
 
 .hero {
-  background: #f7f7f7;
+  background: #ffffff;
   display: -ms-grid;
   display: grid;
   padding: 4rem;
@@ -125,7 +125,7 @@ header ul a {
 section {
   padding: 4rem 2rem;
   text-align: center;
-  background: #f7f7f7;
+  background: #ffffff;
 }
 
 .featured {
@@ -186,7 +186,7 @@ section {
 }
 
 .skills-container ul li {
-  background: #f7f7f7;
+  background: #ffffff;
   padding: 2rem;
   border-radius: 1rem;
   margin-bottom: 1rem;
@@ -225,7 +225,7 @@ section {
 }
 
 .portfolio {
-  background: #f7f7f7;
+  background: #ffffff;
 }
 
 .portfolio-container a img {
@@ -267,7 +267,7 @@ footer .social-footer ul a {
 }
 
 footer .social-footer ul a:hover {
-  color: #f7f7f7;
+  color: #ffffff;
 }
 
 footer p {
@@ -289,7 +289,7 @@ footer p {
 }
 
 .overview-wrapper {
-  background: #f7f7f7;
+  background: #ffffff;
   padding: 2rem;
   border-radius: 1rem;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
@@ -438,10 +438,10 @@ footer p {
         grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
-    background: #f7f7f7;
+    background: #ffffff;
   }
   .hero .content {
-    background: #f7f7f7;
+    background: #ffffff;
     padding: 6rem 8rem 0rem 4rem;
     text-align: left;
   }
@@ -477,7 +477,7 @@ footer p {
     margin: 3rem;
   }
   .overview-wrapper {
-    background: #f7f7f7;
+    background: #ffffff;
     padding: 2rem;
     border-radius: 1rem;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
@@ -535,7 +535,7 @@ footer p {
     margin: 5rem 15rem;
   }
   .overview-wrapper {
-    background: #f7f7f7;
+    background: #ffffff;
     padding: 2rem;
     border-radius: 1rem;
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
@@ -564,6 +564,12 @@ footer p {
   }
   .paragraph-wrapper {
     margin: 5rem 0;
+  }
+  .container-about {
+    padding: 5rem 10rem;
+  }
+  .subinfo-wrapper {
+    padding: 5rem;
   }
 }
 
