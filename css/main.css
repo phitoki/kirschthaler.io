@@ -332,20 +332,55 @@ footer p {
   margin: 2rem 0;
 }
 
-.info-wrapper {
-  padding: 4rem;
+.container-about .info-wrapper {
+  padding: 4rem 4rem 0rem 4rem;
+  /* Solid border */
 }
 
-.info-wrapper h1 {
+.container-about .info-wrapper h1 {
   font-family: "Merriweather";
   color: #040212;
 }
 
-.info-wrapper p {
+.container-about .info-wrapper p {
   font-size: 1rem;
+  font-weight: 400;
   color: #3d3c46;
   font-size: .9rem;
   line-height: 1.8rem;
+  text-align: left;
+}
+
+.container-about .info-wrapper hr.solid {
+  border: 1px solid #aaaaaa;
+  background-color: #aaaaaa;
+  margin-top: 2rem;
+}
+
+.container-about .subinfo-wrapper {
+  padding: 2rem 4rem 4rem 4rem;
+}
+
+.container-about .subinfo-wrapper h3 {
+  color: #040212;
+}
+
+.container-about .subinfo-wrapper p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3d3c46;
+  font-size: .9rem;
+  line-height: 1.8rem;
+  text-align: left;
+}
+
+.container-about .subinfo-wrapper li {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3d3c46;
+  font-size: .9rem;
+  line-height: 1.8rem;
+  text-align: left;
 }
 
 @media only screen and (min-width: 800px) {

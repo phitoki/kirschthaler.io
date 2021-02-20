@@ -320,18 +320,52 @@ footer {
     margin: 2rem 0;
 }
 
-.info-wrapper {
-    padding: 4rem;
-    h1 {                
-        font-family: "Merriweather";
-        color: $shade1000;
+.container-about {
+    .info-wrapper {
+        padding: 4rem 4rem 0rem 4rem;
+        h1 {                
+            font-family: "Merriweather";
+            color: $shade1000;
+        }
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $shade600;
+            font-size: .9rem;
+            line-height: 1.8rem;
+            text-align: left;
+            //margin-right: 30%;
+        }
+        /* Solid border */
+        hr.solid {
+            border: 1px solid $shade200;
+            background-color: $shade200;
+            margin-top: 2rem;
+        }
     }
-    p {
-        font-size: 1rem;
-        color: $shade600;
-        font-size: .9rem;
-        line-height: 1.8rem;
-        //margin-right: 30%;
+
+    .subinfo-wrapper {
+        padding: 2rem 4rem 4rem 4rem;
+        h3 {                
+            color: $shade1000;
+        }
+        p {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $shade600;
+            font-size: .9rem;
+            line-height: 1.8rem;
+            text-align: left;
+            //margin-right: 30%;
+        }
+        li {
+            font-size: 1rem;
+            font-weight: 400;
+            color: $shade600;
+            font-size: .9rem;
+            line-height: 1.8rem;
+            text-align: left;
+        }
     }
 }
 

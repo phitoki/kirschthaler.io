@@ -4,7 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+    <!-- Add GA -->
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N8NWD9K');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Link to styling pages -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,8 +49,8 @@
     </div>
 
     <div class="subheader">
-        <img src="/img/mockup_ArtistApp.png" alt="project-featured" class="project-hero-img">
-        <div class="overview-wrapper">
+        <img src="/img/mockup_ArtistApp.png" alt="project-featured" class="stagger1 project-hero-img">
+        <div class="stagger1 overview-wrapper">
             <ul>
                 <li class="header">Project Title</li><li class="text">Lorem ipsum dolor sit amet.</li>
                 <li class="header">Project Title</li><li class="text">Lorem ipsum dolor sit amet.</li>
@@ -48,7 +59,7 @@
         </div>
     </div>
 
-    <div class="content-wrapper">
+    <div class="stagger1 content-wrapper">
         
         <div class="paragraph-wrapper">
         <h1>Outline</h1>
@@ -78,6 +89,52 @@
         <p>© 2021 Philipp Kirschthaler</p>
     </footer>
 
+    <!-- gsap CDN for animation 3.6 and ScrollTrigger used -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+        var t1 = gsap.timeline();
+
+        t1.from(".content", {
+            y: "-30%",
+            opacity: 0,
+            duration: 2,
+            ease: Power4.easeOut
+        })
+        t1.from(".stagger1", {
+            opacity: 0,
+            y: -50,
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 2
+            // offset to show text faster
+        }, "-=1.5")
+
+        gsap.from(".transition2", {
+            ScrollTrigger: {
+                trigger: ".transition2",
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 2,
+            stagger: .3
+        })
+
+        gsap.from(".transition3", {
+            ScrollTrigger: {
+                trigger: ".transition3",
+                start: "top center"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 2,
+            stagger: .6
+        })
+
+    </script>
 
 </body>
 </html>
