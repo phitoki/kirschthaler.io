@@ -16,8 +16,7 @@ $shade100: #d8d7d7;
 $shadow-tiles: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
 
 
-
-// Homepage
+// global styles
 body {
     height: 100vh;
     margin: 0;
@@ -37,6 +36,12 @@ a {
 
 img {width: 100%;}
 
+li {
+    text-decoration: underline;
+}
+
+
+// Homepage
 .nav-container {
     background:$shade1000;
     z-index: 2;
@@ -47,6 +52,11 @@ img {width: 100%;}
 
     a:hover {
         color: $mywhite;
+    }
+
+    a:active {
+        text-decoration: line-through;
+        color: orange;
     }
 
     .btn {
@@ -98,7 +108,7 @@ header {
 .hero {
     background: $mywhite;
     display: grid;
-    padding: 4rem;
+    padding: 4rem 2rem;
     h1 {
         text-align: center;
         font-family: 'Bebas Neue', cursive;
@@ -314,7 +324,6 @@ footer {
 
 
 // About Me 
-
 .avatar {
     border-radius: 50%;
     height: 200px;
@@ -323,9 +332,9 @@ footer {
 }
 
 .container-about {
-
+    margin: 4rem 2rem;
     .info-wrapper {
-        padding: 0 4rem 0rem 4rem;
+        padding-bottom: 2rem;
         h1 {                
             font-family: 'Bebas Neue', cursive;
             color: $shade1000;
@@ -339,16 +348,9 @@ footer {
             text-align: left;
             //margin-right: 30%;
         }
-        /* Solid border */
-        hr.solid {
-            border: 1px solid $shade200;
-            background-color: $shade200;
-            margin-top: 2rem;
-        }
     }
 
     .subinfo-wrapper {
-        padding: 2rem 4rem 4rem 4rem;
         h3 {                
             color: $shade1000;
         }
@@ -544,6 +546,15 @@ footer {
     .paragraph-wrapper {
         margin: 5rem 0;;
     }
+    // About Me
+    .container-about {
+        margin: 4rem 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .subinfo-wrapper {
+        padding: 4rem 0rem 0rem 10rem;
+    }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -611,10 +622,12 @@ footer {
     }
     // About Me
     .container-about {
-        padding: 5rem 10rem;
+        margin: 4rem 10rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     .subinfo-wrapper {
-        padding: 5rem;
+        padding: 4rem 0rem 0rem 10rem;
     }
 }
 
@@ -632,6 +645,15 @@ footer {
 
     .hero .content {
         padding: 4rem 10rem 0rem 20rem;
+    }
+    // About Me
+    .container-about {
+        margin: 4rem 20rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .subinfo-wrapper {
+        padding: 4rem 0rem 0rem 10rem;
     }
 }
 

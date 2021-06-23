@@ -21,6 +21,10 @@ img {
   width: 100%;
 }
 
+li {
+  text-decoration: underline;
+}
+
 .nav-container {
   background: #040212;
   z-index: 2;
@@ -32,6 +36,11 @@ img {
 
 .nav-container a:hover {
   color: #ffffff;
+}
+
+.nav-container a:active {
+  text-decoration: line-through;
+  color: orange;
 }
 
 .nav-container .btn {
@@ -90,7 +99,7 @@ header ul a {
   background: #ffffff;
   display: -ms-grid;
   display: grid;
-  padding: 4rem;
+  padding: 4rem 2rem;
 }
 
 .hero h1 {
@@ -334,9 +343,12 @@ footer p {
   margin: 2rem 0;
 }
 
+.container-about {
+  margin: 4rem 2rem;
+}
+
 .container-about .info-wrapper {
-  padding: 0 4rem 0rem 4rem;
-  /* Solid border */
+  padding-bottom: 2rem;
 }
 
 .container-about .info-wrapper h1 {
@@ -351,16 +363,6 @@ footer p {
   font-size: .9rem;
   line-height: 1.8rem;
   text-align: left;
-}
-
-.container-about .info-wrapper hr.solid {
-  border: 1px solid #aaaaaa;
-  background-color: #aaaaaa;
-  margin-top: 2rem;
-}
-
-.container-about .subinfo-wrapper {
-  padding: 2rem 4rem 4rem 4rem;
 }
 
 .container-about .subinfo-wrapper h3 {
@@ -542,6 +544,16 @@ footer p {
   .paragraph-wrapper {
     margin: 5rem 0;
   }
+  .container-about {
+    margin: 4rem 4rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .subinfo-wrapper {
+    padding: 4rem 0rem 0rem 10rem;
+  }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -603,10 +615,14 @@ footer p {
     margin: 5rem 0;
   }
   .container-about {
-    padding: 5rem 10rem;
+    margin: 4rem 10rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
   .subinfo-wrapper {
-    padding: 5rem;
+    padding: 4rem 0rem 0rem 10rem;
   }
 }
 
@@ -622,6 +638,16 @@ footer p {
   }
   .hero .content {
     padding: 4rem 10rem 0rem 20rem;
+  }
+  .container-about {
+    margin: 4rem 20rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .subinfo-wrapper {
+    padding: 4rem 0rem 0rem 10rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
