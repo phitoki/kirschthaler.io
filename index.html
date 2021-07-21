@@ -61,6 +61,17 @@
         </div>
     </div>
 
+ 
+    <div id="slider">
+        <div id="slide-container">
+            <div class="slide"><img src="img/codepen.png" alt=""></div>
+            <div class="slide"><img src="img/codepen.png" alt=""></div>
+            <div class="slide"><img src="img/codepen.png" alt=""></div>
+            <div class="slide"><img src="img/codepen.png" alt=""></div>
+            <div class="slide"><img src="img/codepen.png" alt=""></div>
+        </div>
+    </div>
+
     <section class="featured">
         <div class="left">
             <div class="inner transition2">
@@ -152,11 +163,15 @@
     </footer>
 
 
+    <!-- slider animation -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- gsap CDN for animation 3.6 and ScrollTrigger used -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" integrity="sha512-QcYm1q7RbnXmwY7HJ0H7938IS0MalTPYqGUF0fIwQgEjMBt2tqjDBt+R5I+ppdwEohjMdHnFU0H+RxmrGQ8qcg==" crossorigin="anonymous"></script>
 
     <script>
+        // gsap animation
         gsap.registerPlugin(ScrollTrigger);
         var t1 = gsap.timeline();
 
@@ -196,6 +211,32 @@
             duration: 2,
             stagger: .6
         })
+
+        // slider animation
+        $(document).ready(function () {
+            //you can set this, as long as it's not greater than the slides length
+            var show = 3;
+            var w = $('#slider').width() / show;
+            var l = $('.slide').length;
+
+            $('.slide').width(w);
+            $('#slide-container').width(w * l)
+
+            function slider() {
+                $('.slide:first-child').animate({
+                    marginLeft: -w
+                }, 'slow', function () {
+                    $(this).appendTo($(this).parent()).css({marginLeft: 0});
+                });
+            }
+            var timer = setInterval(slider, 3000);
+
+            $('#slider').hover(function() {
+                clearInterval(timer);
+            }, function() {
+                timer = setInterval(slider, 3000);
+            });
+        });
 
     </script>
 </body>

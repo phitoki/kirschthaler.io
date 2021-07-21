@@ -28,18 +28,14 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-decoration-style: none;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none!important;
 }
 
 img {width: 100%;}
-
-li {
-    text-decoration: underline;
-}
-
 
 // Homepage
 .nav-container {
@@ -140,9 +136,32 @@ header {
 }
 
 section {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     text-align: center;
     background: $mywhite;
+}
+
+// Slider for references
+#slider {
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: $shade100;
+}
+
+.slide {
+    height: 100px;
+    float: left;
+    text-align: center;
+    line-height: 8rem;
+    font-size: 40px;
+    img {
+        color: $mywhite;
+        height: 50%;
+        width: auto;
+        padding: 2rem;
+    }
 }
 
 .featured {
@@ -185,19 +204,24 @@ section {
     color: $shade600;
     font-size: .9rem;
     line-height: 1rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .featured-link {
-    color: $base-primary;
+    color: $shade1000;
     padding-bottom: 2rem;
     font-size: .9rem;
     line-height: 1.8rem;
     display: block;
+    font-weight: 600;
+    a:hover {
+        color: $base-primary;
+    }
 }
 
 .skills {
     background: $base-tertiary;
+    margin-top: 4rem;
 }
 
 .skills-container ul li{
@@ -226,6 +250,7 @@ section {
     }   
     .skill-title {
         font-weight: bold;
+        text-decoration-style: none;
     }
     .featured-desc-skill-desc {
         margin-bottom: 2rem;
@@ -496,6 +521,15 @@ footer {
         width: 100%;
     }
 
+    // Slider for references
+    #slider {
+        height: 150px;
+    }
+
+    .slide {
+        height: 150px;
+    }
+
     .portfolio img {
         float: right;
         max-width: 500px;
@@ -640,7 +674,7 @@ footer {
         padding: 2rem 20rem 2rem 0;
     }
     section {
-        padding: 20rem 20rem 4rem 20rem;
+        padding: 10rem 20rem 4rem 10rem;
     }
 
     .hero .content {

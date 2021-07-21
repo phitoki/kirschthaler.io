@@ -11,18 +11,16 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 img {
   width: 100%;
-}
-
-li {
-  text-decoration: underline;
 }
 
 .nav-container {
@@ -134,9 +132,32 @@ header ul a {
 }
 
 section {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
   text-align: center;
   background: #ffffff;
+}
+
+#slider {
+  height: 100px;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  background: #d8d7d7;
+}
+
+.slide {
+  height: 100px;
+  float: left;
+  text-align: center;
+  line-height: 8rem;
+  font-size: 40px;
+}
+
+.slide img {
+  color: #ffffff;
+  height: 50%;
+  width: auto;
+  padding: 2rem;
 }
 
 .featured {
@@ -180,19 +201,25 @@ section {
   color: #3d3c46;
   font-size: .9rem;
   line-height: 1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .featured-link {
-  color: #0D14D6;
+  color: #040212;
   padding-bottom: 2rem;
   font-size: .9rem;
   line-height: 1.8rem;
   display: block;
+  font-weight: 600;
+}
+
+.featured-link a:hover {
+  color: #0D14D6;
 }
 
 .skills {
   background: #76bbfc;
+  margin-top: 4rem;
 }
 
 .skills-container ul li {
@@ -226,6 +253,8 @@ section {
 
 .skills-container ul li .skill-title {
   font-weight: bold;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
 }
 
 .skills-container ul li .featured-desc-skill-desc {
@@ -497,6 +526,12 @@ footer p {
     margin-top: 15%;
     width: 100%;
   }
+  #slider {
+    height: 150px;
+  }
+  .slide {
+    height: 150px;
+  }
   .portfolio img {
     float: right;
     max-width: 500px;
@@ -634,7 +669,7 @@ footer p {
     padding: 2rem 20rem 2rem 0;
   }
   section {
-    padding: 20rem 20rem 4rem 20rem;
+    padding: 10rem 20rem 4rem 10rem;
   }
   .hero .content {
     padding: 4rem 10rem 0rem 20rem;
